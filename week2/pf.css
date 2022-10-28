@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    margin: 20px 0;
+    list-style-type: none;
+}
+.navbar ul li{
+    font-family: sans-serif;
+    font-size:16px;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:blue;
+    padding: 8px 25px;
+    transition: all .3s ease;
+}
+.navbar ul li a:hover{
+    background-color:brown;
+    color: black;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-items: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('f1.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    
+    margin: 40px 0;
+
+}
+.heading{
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center
+  
+}
+
+/* About section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: darkgray;
+   
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 200px;
+    height: 200px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+#intro .hobb{
+    padding: 0 30px 0 0;
+}
+/* portfolio section */
+#service{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+#service .heading{
+    padding: 30px;
+    font-size: 50px;
+    color: blanchedalmond;
+}
+/* project section */
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+/* contact */
+#contact{
+   background-color: bisque;
+}
+#main{
+    position: absolute;
+    left: 30%;
+    width: 100%;
+}
+#main h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 20px 0;
+    margin: 20px;
+}
+#main label{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px 0;
+    margin: 20px;
+    text-align: center;
+
+}
+#main input , textarea{
+    width: 25%;
+    margin: 14px;
+}
+#main input{
+    height: 50px;
+}
+#main button{
+    width: 25%;
+    font-weight: bold;
+    font-size: 20px;
+}
